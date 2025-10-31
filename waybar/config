@@ -1,0 +1,47 @@
+//* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
+//* ............................................*/
+//* .............CHRYSANTHEMUM.......................*/
+//* ............................................*/
+//* --- 👍 designed by https://github.com/Krautt  👍 --- */
+{
+    "include": [
+        "$HOME/.config/waybar/Modules",
+        "$HOME/.config/waybar/ModulesWorkspaces",
+        "$HOME/.config/waybar/ModulesCustom",
+        "$HOME/.config/waybar/ModulesGroups",
+        "$HOME/.config/waybar/UserModules",
+    ],
+    "layer": "top",
+    //"mode": "hide",
+    "exclusive": true,
+    "passthrough": false,
+    "position": "top",
+    "spacing": 5,
+    "fixed-center": false,
+    "ipc": true,
+    "margin-left": 5,
+    "margin-right": 5,
+    "margin-top": 5,
+    "margin-bottom": 5,
+    "modules-left": [
+        "clock#5",
+        "tray",
+        "custom/swaync"
+    ],
+    "modules-center": [
+        //"hyprland/workspaces"
+        "wlr/taskbar",
+        "mpris",
+    ],
+    "modules-right": [
+        "custom/hyprpicker",
+        "pulseaudio#1",
+        "backlight",
+        "battery",
+        "network#speed",
+        "cpu",
+        "memory",
+        "disk",
+        "custom/cava_mviz"
+    ],
+}
