@@ -37,8 +37,8 @@ trap cleanup EXIT INT TERM
 
 cat >"$config_file" <<EOF
 [general]
-framerate = 60
-bars = 15
+framerate = 30
+bars = 16
 
 [input]
 method = pulse
