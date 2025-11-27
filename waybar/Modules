@@ -152,11 +152,10 @@
 		"tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
 	},
 	"cpu": {
-		"format-alt": "{usage}% 󰍛",
 		"interval": 1,
 		"min-length": 5,
-		"format-alt-click": "click",
-		"format": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% 󰍛",
+		"on-click": "kitty --hold sh -c htop",
+		"format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}{icon8}{icon9}{icon10}{icon11}{icon12}{icon13}{icon14}{icon15}{icon16}{icon17}{icon18}{icon19}{icon20}{icon21}{icon22}{icon23} {usage:>2}% 󰍛",
 		"format-icons": [
 			"▁",
 			"▂",
@@ -166,8 +165,7 @@
 			"▆",
 			"▇",
 			"█"
-		],
-		"on-click-right": "gnome-system-monitor",
+		]
 	},
 	"disk": {
 		"interval": 30,
