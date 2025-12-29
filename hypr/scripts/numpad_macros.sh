@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 EVENT=$(sudo cat /proc/bus/input/devices | grep -A 4 "\"Hengchangtong  HCT USB Entry Keyboard\"" | grep -o "event[[:digit:]]")
 
 sudo evsieve --input "/dev/input/${EVENT}" grab \
