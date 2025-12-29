@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 EVENT=$(sudo cat /proc/bus/input/devices | grep -A 4 "\"Hengchangtong  HCT USB Entry Keyboard\"" | grep -o "event[[:digit:]]")
 
